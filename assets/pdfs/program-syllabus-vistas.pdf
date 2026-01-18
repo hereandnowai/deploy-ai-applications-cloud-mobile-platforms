@@ -1,21 +1,93 @@
-# FULL PROGRAM SYLLABUS: Deployment of AI Applications for Cloud and Mobile Platforms
-# This is a placeholder for the final high-resolution PDF.
-# For now, it contains the curriculum details.
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 9 0 R /MediaBox [ 0 0 612 792 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
 
-Course Title: Deployment of AI Applications for Cloud and Mobile Platforms
-Partner: Vels Institute of Science, Technology & Advanced Studies (VISTAS)
-Provider: HERE AND NOW AI
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/Contents 10 0 R /MediaBox [ 0 0 612 792 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
 
-Course Content:
-- Day 1: Cloud Fundamentals & AI Infrastructure
-- Day 2: Containerization with Docker
-- Day 3: API Orchestration (REST/gRPC)
-- Day 4: Kubernetes & Serverless Scaling
-- Day 5: MLOps & CI/CD
-- Day 6: Mobile AI Architecture
-- Day 7: Vector Databases & Cloud Storage
-- Day 8: Monitoring & Cost Optimization
-- Day 9: AI Security & Ethics
-- Day 10: Capstone Project
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/PageMode /UseNone /Pages 8 0 R /Type /Catalog
+>>
+endobj
+7 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260119013131+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260119013131+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+8 0 obj
+<<
+/Count 2 /Kids [ 4 0 R 5 0 R ] /Type /Pages
+>>
+endobj
+9 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1911
+>>
+stream
+GatU3968QQ&AI=/oSEnh(6U5j(,qGtY*TS(YmN*g`_tP41=h8DP[Jt=p5DJ%GU(gX;2/1jpZ(R`gB3dKT)"lD!Bqdumb.chLL^Knhuo/>%9L[)O#,+&cK5\_1c*NaE;\(BkO"bmSrj)Xe*4K+lq*l]I\7GP^/d0%S1"[,lQh,S9.Y`YlnP\/DIB`&78X>^ZAQi<KT/s7+o)Vi)^?*BXji&dFTsDCi'sl[5e%K/,3F=,Z;74IR?AMDT,dW"YNJYSrPf/aLZ[JKqOe#\)=ZKfKD3%*n_MjW\5QKBFNe-@GRo:1h-\"Xdj9CQrCX57:nGeAKI*,n%@62)o/-M$G!']sa>OTU8-A'pIP')spk#5nAR8EMW[lRB?)8P4']26/kq8;hD@c4D(>0oWC'L`=c8]uUo4E%k%Qs(6\+;8r<O,_THenQ3cQ+qQ:A>Hi\/nTIpck'<(\FX:qRPe)@P-n\/As1B$%gHuIN9@7j2M]H]@Rb/Z#jLVGR4c]ZAdsNW;7&t[:MAuAa0sbb]Ls)3%G;^p7Q[IWo=thE[FtOk=_fh+o#+$"'D"$=n8tne6o[/H1BHbFJ2f?l&Q=%748Pn3qt?2Sc`T4D@I%dLQLQB$:l*c"/E1i=iYp5F$s"HPo2c[OG3[)BQs#=itOm\Cl@"?qH-A[LnKidacf[jj,aC]?TN.1/(enE40V"j+ec=')/7H*[]G!:<_nN3UiKfJr2DR>#%9";)&srJ`Jhj5S6XI?-Y+toFF)W5rLK/:V#pIPMXoMZ8p9:<SW[3rp8@7OVpYMtVhs`LDE&/>O?C@i1$,s0N#a=7($6g?OB7>0>c4rB5j4BSYiOQOW@.U@o)_PL;joNh4Rm0!!a\'06-ZS)pWB_Kn6KP+@LjfpH^X,lYYfGE93G.&g4D"g(\:/"A8\!\*.tATCZ<a`6;rLURF\6UaD@1k@OJK)p]f27.e&qrc]!i_jqW/pWpL:eq:#gh8VM\+eWd-!Q"G@.?u/i`h:\HYeO*V<.Zd*<pK",#`g.'h&6+#+)`s36-_pcmP+3D99sAl6eR\;+.4\k9Wn1TL.@Lb":uIK$ro%tH:#5(&']%9dl+a%d-Z.:5'ToI43,[9!q08b!B$8IBTTqY0B2f>EH#r,d@5O%BE;XSW]Xcc&k_E1_EbDb5No(ejN$GKF`4#uf^tXZgPhD>bjOq>0!DD):,dQ@mb?Wn?TF/kAnR=K0Lj@X"VUnRoMInFgnA\m>Y3)IgY,O[.-SSDh^h@:mSp+[<=*(.34%2hOknT@[F\r/PA$++'=YFIuiXW.VNn8;W*-Kp@ZrZ1@0G$=rgnd[d;!I#?Rh&?"oRYE8fT,!]H6'`a3'PNn\6Hi;Yh`(TZm$T,0$Kc\`Bt(BpK+E6`,L'QG<nAui=e;;j7qh1C@MJfpafL1X8_rX!RFB>BHCo1G+R9]rp[1!UWTjY-JL%MZr@2\p/.2sfV&^D;790nG[$Cj;<%p6pJNYMm>D0lZ$^b8#mDuD5\$j)'\0;RQ"UksA[3\m^==[KS;ne!fAl@(h.ERQdqCb3p^K-1]5%0gc]mMD.+#2:P1_81Ni?K,_f@eY:8cb8S!o`*KSn?$7`&qAg;H1<PD$6;5<,7hT^S!<-ofCl2qVuNi'N_Wn6(kmR<&G&6eLkWPU)kSa"_[bh]MA:3m4nIZrXif58C?nEI)(45*KZcMg8>oY1L#"Bs1_SdIt.7&]DCJ4Eip*9u:!u)9Gb5Dr3!2-SfN5YB`l&MWRE5F)K@,big%p@t8Hq_=]h,Vml2'o`+fV'=qKiH#W\1rs*uNe?.cEfrt6D^rfJZ966_&L-3_is-D/-\tSDeN_2OB/<uef.fHNY<-mi.Iah9[WM@&rQ:aq)2/\Dm]rbFQC=ZSr>=2h;BA/fB%]jbA=rUo1AiTG2ZbCbgh`mSHSG`OYh.bd~>endstream
+endobj
+10 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 575
+>>
+stream
+Gat=g?#/1K'Sc)T/'d6?Y\,u$)s:sAf0Q(V'F_ZUj:b%c5$U[Nl$iSkm:Kkan>Hr)5mTX"H$.%JV8:0Tci@E&q"0OHbFglt>:43bDW&*`Sg*m6o3qe<Bh"Se]0BATU)[4+U(ibA:Wq#YkF.3eA\UcX[O+TNX;ECUJamWK^^Y<sUhSbq$c6ZNn"G&XlGF``pD7_<T5hbn%9ZC:.YUTnN0"mj@]SiOBJ*'.+K.(ogDZ=^O.p]oT"u<Vb'#YLMMIsLg*a3bfclo4-Nc^$Cu'pjXbe";CBS'?i2#Nu&/m0Fcs-7C/?f(`OY4krbJjN@2+ZOQe7\ngmWW[<jEEGFbs<g!1q9=5!fB5dc)]op74Pc`OBVXN?u;s?i'T+q%L3qJP`63KC5Zu>(N'B$RhQ5t;,k11%`_>DfEX#MiJP*.=R)BhZO[`Pe>UJA33o>,)ET8U2ZB871]\OS(,9a<b5_"/o')u&I8a37+-G[1N(FHkEt2uSDbfR=&"Zs6$[pn[-Zhn'@r0J&6;MilQ7nn:CG+/';E`a[Dh>),_"K.el7IB7)3e\5),6Eokpm63569In<4M~>endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000514 00000 n 
+0000000708 00000 n 
+0000000776 00000 n 
+0000001056 00000 n 
+0000001121 00000 n 
+0000003123 00000 n 
+trailer
+<<
+/ID 
+[<babc393187b1ec5c8a2cdf6a2bf710c5><babc393187b1ec5c8a2cdf6a2bf710c5>]
+% ReportLab generated PDF document -- digest (opensource)
 
-Contact: info@hereandnowai.com | +91 996 296 1000
+/Info 7 0 R
+/Root 6 0 R
+/Size 11
+>>
+startxref
+3789
+%%EOF
