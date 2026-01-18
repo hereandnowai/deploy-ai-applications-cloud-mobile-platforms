@@ -196,29 +196,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 const reader = response.body.getReader();
                 const decoder = new TextDecoder();
                 let fullText = "";
+                let buffer = "";
 
                 while (true) {
                     const { done, value } = await reader.read();
                     if (done) break;
                     
-                    const chunk = decoder.decode(value);
-                    const lines = chunk.split('\n');
+                    buffer += decoder.decode(value, { stream: true });
+                    const lines = buffer.split('\n');
+                    
+                    // Keep the last partial line in the buffer
+                    buffer = lines.pop();
                     
                     for (const line of lines) {
-                        if (line.startsWith('data: ')) {
+                        const trimmedLine = line.trim();
+                        if (!trimmedLine) continue;
+                        
+                        if (trimmedLine.startsWith('data: ')) {
                             try {
-                                const data = JSON.parse(line.substring(6));
-                                if (data.candidates && data.candidates[0].content.parts[0].text) {
+                                const jsonStr = trimmedLine.substring(6);
+                                const data = JSON.parse(jsonStr);
+                                if (data.candidates && data.candidates[0].content && data.candidates[0].content.parts) {
                                     const part = data.candidates[0].content.parts[0].text;
                                     fullText += part;
                                     botMsgDiv.textContent = fullText;
                                     chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
                                 }
                             } catch (e) {
-                                // Ignore parse errors for partial chunks
+                                console.error('Error parsing SSE chunk:', e, trimmedLine);
                             }
                         }
                     }
+                }
+                
+                // Process any remaining text in the buffer after the stream ends
+                if (buffer.startsWith('data: ')) {
+                    try {
+                        const data = JSON.parse(buffer.substring(6));
+                        if (data.candidates && data.candidates[0].content && data.candidates[0].content.parts) {
+                            fullText += data.candidates[0].content.parts[0].text;
+                            botMsgDiv.textContent = fullText;
+                        }
+                    } catch (e) {}
                 }
             } catch (error) {
                 const indicator = document.getElementById('typing-indicator');
