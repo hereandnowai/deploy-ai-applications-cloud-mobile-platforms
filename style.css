@@ -454,35 +454,32 @@ footer {
 /* Floating Chatbot on Mobile */
     .chatbot-container {
         position: fixed !important;
-        /* Increased spacing to clear Safari's bottom bar more aggressively */
-        bottom: calc(25px + env(safe-area-inset-bottom, 0px)) !important;
-        right: 15px !important;
+        /* Force the button much higher to guarantee it clears Safari's dynamic bottom bar */
+        bottom: calc(85px + env(safe-area-inset-bottom, 0px)) !important;
+        right: 20px !important;
         left: auto !important;
         top: auto !important;
         width: 65px !important;
         height: 65px !important;
         z-index: 1000000 !important;
         pointer-events: all !important;
-        /* Remove transform here to prevent "thin strip" window bug */
         transform: none !important;
         -webkit-transform: none !important;
     }
 
     .chatbot-window {
         position: fixed !important;
-        /* High bottom to stay above the button and Safari bar */
-        bottom: calc(100px + env(safe-area-inset-bottom, 0px)) !important;
-        /* Use large margins to ensure the window is readable */
-        left: 20px !important;
-        right: 20px !important;
+        /* Positioned relative to the elevated button */
+        bottom: calc(160px + env(safe-area-inset-bottom, 0px)) !important;
+        left: 15px !important;
+        right: 15px !important;
         width: auto !important;
-        height: min(550px, calc(100dvh - 160px)) !important;
+        /* Ensure total height doesn't push the header off-screen */
+        height: auto !important;
+        max-height: calc(100dvh - 200px) !important;
         z-index: 1000001 !important;
         border-radius: 20px !important;
         box-shadow: 0 15px 50px rgba(0,0,0,0.5) !important;
-        /* Apply transform ONLY to the window itself for smoothness */
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
         display: none;
     }
 
