@@ -320,6 +320,73 @@ table tr:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+/* Downloads Section */
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.download-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    border: 1px solid #eee;
+}
+
+.download-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.trainer-img-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-color);
+}
+
+.trainer-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trainer-role {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.download-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-dl {
+    display: inline-block;
+    padding: 8px 15px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-dl:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 /* Footer */
 footer {
     background: var(--secondary-color);
