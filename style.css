@@ -321,11 +321,63 @@ table tr:hover {
 }
 
 /* Downloads Section */
+/* Agenda Table Styles */
+#agenda-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#agenda-table td {
+    vertical-align: middle;
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status-badge.confirmed {
+    background-color: #e6f4ea;
+    color: #1e7e34;
+}
+
+.status-badge.ytbd {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.btn-view {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-view:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.time-info {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+/* ...existing code... */
 .downloads-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .download-card {

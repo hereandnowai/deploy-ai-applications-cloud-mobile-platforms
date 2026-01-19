@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('nav ul li a');
     
@@ -17,6 +17,106 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Program Switching Logic
+    let programsData = [];
+    let agendaData = [];
+
+    async function fetchData() {
+        try {
+            const [agendaRes, programsRes] = await Promise.all([
+                fetch('assets/data/agenda.json'),
+                fetch('assets/data/programs.json')
+            ]);
+            agendaData = await agendaRes.json();
+            programsData = (await programsRes.json()).programs;
+            
+            renderAgenda();
+            
+            // Check for URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const programId = urlParams.get('program') || 'vistas';
+            renderProgram(programId);
+        } catch (error) {
+            console.error('Error fetching program data:', error);
+        }
+    }
+
+    function renderAgenda() {
+        const agendaBody = document.getElementById('agenda-body');
+        if (!agendaBody) return;
+
+        agendaBody.innerHTML = agendaData.map(item => `
+            <tr>
+                <td>${item.n}</td>
+                <td>${item.client}</td>
+                <td>${item.program}</td>
+                <td>${item.start}</td>
+                <td>${item.end}</td>
+                <td>${item.timings}</td>
+                <td><span class="status-badge ${item.status.toLowerCase()}">${item.status}</span></td>
+                <td><button onclick="switchProgram('${item.id}')" class="btn-view">View Syllabus</button></td>
+            </tr>
+        `).join('');
+    }
+
+    window.switchProgram = (id) => {
+        // Update URL without reloading
+        const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?program=' + id;
+        window.history.pushState({ path: newUrl }, '', newUrl);
+        renderProgram(id);
+        
+        // Scroll to syllabus
+        const syllabusSection = document.getElementById('syllabus');
+        if (syllabusSection) {
+            window.scrollTo({
+                top: syllabusSection.offsetTop - 70,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+    function renderProgram(id) {
+        const program = programsData.find(p => p.id === id) || programsData.find(p => p.id === 'vistas');
+        if (!program) return;
+
+        // Update Hero
+        document.getElementById('hero-title').textContent = program.title;
+        document.getElementById('hero-client').textContent = `Prepared for: ${program.client}`;
+
+        // Update About Info
+        document.getElementById('program-info-content').innerHTML = `<p>${program.about}</p>`;
+
+        // Update Syllabus
+        document.getElementById('syllabus-title').textContent = `${program.schedule.length}-Day Training Schedule`;
+        document.getElementById('syllabus-meta').textContent = `Time: ${program.time} (Daily)`;
+        
+        const syllabusBody = document.getElementById('syllabus-body');
+        syllabusBody.innerHTML = program.schedule.map(day => `
+            <tr>
+                <td>${day.day}</td>
+                <td><strong>${day.topic}</strong></td>
+                <td>${day.description}</td>
+            </tr>
+        `).join('');
+
+        // Update Outcomes
+        const outcomesList = document.getElementById('outcomes-list');
+        outcomesList.innerHTML = program.outcomes.map(outcome => `<li>${outcome}</li>`).join('');
+        
+        // Update Download Link (if we had specific PDFs, otherwise keep default or hide)
+        const prospectusLink = document.querySelector('.highlight-card a');
+        if (prospectusLink) {
+            // Mapping for specific PDFs if available, else fallback
+            const pdfMap = {
+                'vistas': 'assets/pdfs/program-syllabus-vistas.pdf',
+                // We'll need to generate these or use placeholders
+            };
+            prospectusLink.setAttribute('href', pdfMap[id] || 'assets/pdfs/program-syllabus-vistas.pdf');
+        }
+    }
+
+    fetchData();
 
     // Intersection Observer for fade-in effect
     const fadeElements = document.querySelectorAll('.section');

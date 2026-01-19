@@ -1,0 +1,6 @@
+[
+    {"n": 1, "id": "sairam", "client": "Sri Sairam Institute of Technology", "program": "AI Agents Fundamentals", "start": "01/23/2026", "end": "01/30/2026", "timings": "09:00 AM to 04:00 PM", "status": "Confirmed"},
+    {"n": 2, "id": "vistas", "client": "Vels Institute of Science, Technology & Advanced Studies (VISTAS)", "program": "AI Apps & Cloud Deployment", "start": "02/02/2026", "end": "02/13/2026", "timings": "09:30 AM to 12:30 PM", "status": "Confirmed"},
+    {"n": 3, "id": "agilysys", "client": "Agilysys Technologies India Private Limited", "program": "Advanced Java with Copilot", "start": "02/02/2026", "end": "02/13/2026", "timings": "02:00 PM to 06:00 PM", "status": "Confirmed"},
+    {"n": 4, "id": "sathyabama", "client": "Sathyabama University", "program": "Multi-Agent Systems", "start": "02/07/2026", "end": "03/07/2026", "timings": "09:00 AM to 03:15 PM", "status": "YTBD"}
+]

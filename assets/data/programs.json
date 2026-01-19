@@ -1,0 +1,111 @@
+{
+    "programs": [
+        {
+            "id": "sairam",
+            "client": "Sri Sairam Institute of Technology",
+            "title": "AI Agents Fundamentals and AI Agent Building Hands on",
+            "period": "Jan 23 - Jan 30, 2026",
+            "time": "09:00 AM to 04:00 PM",
+            "status": "Confirmed",
+            "about": "This intensive program focuses on the technical foundations of Autonomous AI Agents. Students will learn how to build, orchestrate, and deploy multi-agent systems that can plan, reason, and execute complex tasks.",
+            "schedule": [
+                {"day": "Day 1", "topic": "Foundations of AI Agents", "description": "Understanding LLMs as reasoning engines, Agentic vs Non-agentic workflows."},
+                {"day": "Day 2", "topic": "Prompt Engineering for Agents", "description": "Chain-of-Thought, ReAct pattern, and few-shot prompting for reliable agent behavior."},
+                {"day": "Day 3", "topic": "Agent Frameworks - Part 1", "description": "Introduction to LangGraph and LangChain for structured agent design."},
+                {"day": "Day 4", "topic": "Agent Frameworks - Part 2", "description": "Mastering CrewAI for multi-agent role-playing and task delegation."},
+                {"day": "Day 5", "topic": "Agent Tooling & RAG", "description": "Connecting agents to external tools (Search, Database, Python) and private knowledge bases."},
+                {"day": "Day 6", "topic": "State & Memory Management", "description": "Implementing short-term and long-term memory for persistence across turns."},
+                {"day": "Day 7", "topic": "Multi-Agent Orchestration", "description": "Hierarchical vs Sequential workflows; supervisor agent patterns."},
+                {"day": "Day 8", "topic": "Security & Guardrails", "description": "Ensuring safety in autonomous systems using NeMo Guardrails or Llama Guard."},
+                {"day": "Day 9", "topic": "Deployment & Scale", "description": "Serving agentic workflows via LangServe and containerized environments."},
+                {"day": "Day 10", "topic": "Capstone Demo day", "description": "Presentation of a fully functional autonomous agent solving a real-world problem."}
+            ],
+            "outcomes": [
+                "Build autonomous agents that can use external tools effectively.",
+                "Orchestrate multi-agent teams using CrewAI and LangGraph.",
+                "Implement robust state management and memory for AI systems.",
+                "Deploy agentic services in production-ready environments.",
+                "Understand the ethical and security guardrails required for autonomous AI."
+            ]
+        },
+        {
+            "id": "vistas",
+            "client": "Vels Institute of Science, Technology & Advanced Studies (VISTAS)",
+            "title": "Deployment of AI Applications for Cloud and Mobile Platforms",
+            "period": "Feb 2 - Feb 13, 2026",
+            "time": "09:30 AM to 12:30 PM",
+            "status": "Confirmed",
+            "about": "This 10-day intensive training program is designed to equip students with the skills required to take AI models from a local development environment to a global scale.",
+            "schedule": [
+                {"day": "Day 1", "topic": "Introduction to AI Cloud Deployment", "description": "Overview of AI lifecycles, introduction to major cloud providers, and setting up the environment."},
+                {"day": "Day 2", "topic": "Containers & Docker Basics", "description": "Understanding containerization and writing Dockerfiles for AI models."},
+                {"day": "Day 3", "topic": "Cloud DevOps for AI", "description": "CI/CD pipelines for automated deployment and registry management."},
+                {"day": "Day 4", "topic": "Building AI Backends (APIs)", "description": "Creating RESTful and GraphQL APIs using Flask or FastAPI."},
+                {"day": "Day 5", "topic": "Cloud-to-Mobile Architecture", "description": "Designing scalable architectures connecting backends with mobile thin-clients."},
+                {"day": "Day 6", "topic": "Managing Costs & Performance", "description": "Strategies for reducing cloud compute costs and optimizing model latency."},
+                {"day": "Day 7", "topic": "Mobile AI Use Cases", "description": "Deep dive into real-world applications: Computer Vision and NLP for chatbots."},
+                {"day": "Day 8", "topic": "Edge AI & Integration", "description": "Exploring TFLite, CoreML, and ONNX for running models directly on mobile devices."},
+                {"day": "Day 9", "topic": "Capstone Project: Development", "description": "Hands-on project work implementing a full-stack AI application."},
+                {"day": "Day 10", "topic": "Capstone Showcase & Conclusion", "description": "Project presentations, final feedback, and certification roadmap."}
+            ],
+            "outcomes": [
+                "Deploy machine learning models securely on cloud platforms.",
+                "Write production-grade containers for AI workloads.",
+                "Design and implement API-driven mobile AI architectures.",
+                "Optimize AI applications for both cost and performance.",
+                "Deliver a full-stack Capstone Project."
+            ]
+        },
+        {
+            "id": "agilysys",
+            "client": "Agilysys Technologies India Private Limited",
+            "title": "Advanced AI-Powered Java Development using GitHub Copilot",
+            "period": "Feb 2 - Feb 13, 2026",
+            "time": "02:00 PM to 06:00 PM",
+            "status": "Confirmed",
+            "about": "This training is designed for mid-level and senior Java backend engineers to use GitHub Copilot as an engineering accelerator and build AI-enabled Java systems.",
+            "schedule": [
+                {"day": "Day 1", "topic": "Foundations of AI & LLMs for Java Developers", "description": "Understanding foundational models and LLM integration in Java ecosystems."},
+                {"day": "Day 2", "topic": "RAG Foundations with Java Context", "description": "Learning Retrieval Augmented Generation patterns specifically for Java applications."},
+                {"day": "Day 3", "topic": "Advanced RAG Use Cases", "description": "Implementing complex vector search and context-rich retrieval in enterprise Java."},
+                {"day": "Day 4", "topic": "AI-Assisted Java Development at Scale", "description": "Using Copilot for boilerplate reduction, testing, and legacy code migration."},
+                {"day": "Day 5", "topic": "Deep Productivity Engineering with Copilot", "description": "Advanced prompt engineering for internal tool building and workflow automation."},
+                {"day": "Day 6", "topic": "Integrating AI into Java Applications", "description": "Using libraries like LangChain4j and Spring AI to embed models into services."},
+                {"day": "Day 7", "topic": "Enterprise AI Architecture Patterns", "description": "System design for scalable, reliable AI features in large-scale Java systems."},
+                {"day": "Day 8", "topic": "DevOps Automation & Continuous AI", "description": "Automating AI evaluations and CI/CD for AI-integrated Java apps."},
+                {"day": "Day 9", "topic": "Advanced Concepts & Internal AI Agents", "description": "Building and deploying autonomous Java-based agents for internal ops."},
+                {"day": "Day 10", "topic": "MCP, Capstone & AI Roadmap", "description": "Exploring Model Context Protocol (MCP) and final project discussions."}
+            ],
+            "outcomes": [
+                "2x-4x faster development cycles using AI acceleration.",
+                "Reduced debugging and refactoring effort systematically.",
+                "Cleaner, more maintainable Java codebases using AI patterns.",
+                "Ability to design and build AI-enabled Java systems including RAG.",
+                "Expertise in using GitHub Copilot for complex architectural tasks."
+            ]
+        },
+        {
+            "id": "sathyabama",
+            "client": "Sathyabama University",
+            "title": "End-to-End Multi-Agent Systems Development",
+            "period": "Feb 7 - Mar 7, 2026",
+            "time": "09:00 AM to 03:15 PM",
+            "status": "YTBD",
+            "about": "This immersive program guides students through the entire lifecycle of building a robust, full end-to-end multi-agent system, from architecture to cloud deployment.",
+            "schedule": [
+                {"day": "Day 1", "topic": "Foundations & Architecture", "description": "Intro to Multi-Agent Systems, Roles, Communication, Hierarchy, and Development Setup."},
+                {"day": "Day 2", "topic": "Core Agent Service & API", "description": "Building RESTful APIs with FastAPI/Express and Implementing 'Agent-as-a-Service'."},
+                {"day": "Day 3", "topic": "Advanced Tooling & State", "description": "Integrating memory, custom tools, and handling asynchronous agent tasks."},
+                {"day": "Day 4", "topic": "Frontend & Real-time UI", "description": "Modern React development and implementing WebSockets for live agent streaming."},
+                {"day": "Day 5", "topic": "Deployment & Monitoring", "description": "Setting up CI/CD pipelines and deploying to cloud platforms like Vercel."}
+            ],
+            "outcomes": [
+                "A fully functional, multi-agent application hosted live in the cloud.",
+                "Full-Stack competency in Python/Node.js, APIs, and React.",
+                "Deep understanding of multi-agent design patterns and tooling.",
+                "Practical experience in Git-based collaboration and CI/CD.",
+                "Mastery of real-time UI interactions for AI applications."
+            ]
+        }
+    ]
+}
