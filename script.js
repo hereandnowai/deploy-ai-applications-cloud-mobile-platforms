@@ -257,33 +257,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             try {
                 let response;
-                const isLocalFile = window.location.protocol === 'file:';
                 
-                if (isLocalFile) {
-                    const LOCAL_KEY = "REDACTED";
-                    const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:streamGenerateContent?alt=sse&key=${LOCAL_KEY}`;
-                    
-                    response = await fetch(url, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            contents: [{
-                                parts: [{ text: SYSTEM_PROMPT + "\n\nUser: " + userText }]
-                            }]
-                        })
-                    });
-                } else {
-                    response = await fetch('/api/chat', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            message: userText,
-                            systemPrompt: SYSTEM_PROMPT,
-                            model: MODEL_NAME,
-                            stream: true
-                        })
-                    });
-                }
+                response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        message: userText,
+                        systemPrompt: SYSTEM_PROMPT,
+                        model: MODEL_NAME,
+                        stream: true
+                    })
+                });
 
                 // Remove typing indicator before starting stream
                 const indicator = document.getElementById('typing-indicator');

@@ -88,16 +88,6 @@ Below is a **day-wise overview** of the 10-day program, before diving into the d
 
 ---
 
-## **Commercials**
-
-* **Fee:** ₹4,495 per hour  
-* **Total Hours:** 40  
-* **Subtotal:** ₹1,79,800  
-* **GST (18%):** ₹32,364  
-* **Total Payable:** **₹2,12,164**
-
----
-
 Warm regards,  
 **Deepti Balagopal**,  
 COO,  
